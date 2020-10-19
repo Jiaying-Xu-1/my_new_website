@@ -1,0 +1,14 @@
+---
+title: "Several stocks in China A-share market"
+date: '2020-10-20'
+description: 'Finance data with the tidyquant package'
+draft: no
+image: yieldcurve.jpg
+keywords: ''
+slug: "project2"
+categories:
+- ''
+- ''
+---
+
+## R Markdown
