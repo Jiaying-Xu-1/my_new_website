@@ -124,7 +124,7 @@ disqusShortname = ""
     [[params.tiles.showcase]]
       title = "continue"
       subtitle = "Feugiat Amet Tempus"
-      image = "pic02.jpg"
+      image = "yield.jpg"
       url = "projects/project2"
     # You can make more showcases by copy and pasting the code above
 
