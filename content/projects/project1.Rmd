@@ -1,5 +1,5 @@
 ---
-title: "Where Do People Drink The Most Beer, Wine And Spirits?"
+title: "Alcohol Analysis"
 date: '2020-10-20'
 description: ''
 draft: no
@@ -55,9 +55,6 @@ data(drinks)
 ```
 
 
-What are the variable types? Any missing values we should worry about? 
-After cheking the data, we find that there are no missing values and data types include numeric and character data types.
-
 ```{r glimpse_skim_data}
 glimpse(drinks)
 skim(drinks)
@@ -68,11 +65,20 @@ skim(drinks)
 ##Top 25 beer consuming countries
 
 ```{r beer_plot}
-beer_25 <- drinks %>% 
-  arrange(desc(beer_servings)) %>% 
-  slice(1:25)
 
-ggplot(beer_25, aes( x=beer_servings, y=reorder(country, beer_servings))) + geom_point() + labs(y="", x="Beer Servings") + ggtitle("Top 25 Beer Servings") +theme_classic()
+drinks %>% 
+  slice_max(n=25,beer_servings) %>% 
+  ggplot(mapping = aes(y = reorder(country,beer_servings), x = beer_servings)) +
+  geom_col()+
+  theme_economist()+
+  labs(
+    x = "Servings of beer",
+    y= "" ,
+    title = "Top 25 beer consuming countries",
+    caption = "Source: https://fivethirtyeight.com/features/dear-mona-followup-where-do-people-drink-the-most-beer-wine-and-spirits/"
+    ) + 
+    geom_text(aes(label = beer_servings), vjust=0.5, hjust=1, colour = "white", position = position_dodge(.9), size = 3)
+
 
 
 ```
@@ -82,4 +88,53 @@ ggplot(beer_25, aes( x=beer_servings, y=reorder(country, beer_servings))) + geom
 * It seems that the countries that produce the most beer are the biggest drinkers. The Czech Republic, Germany and Belgium are all in the top 25 beer drinking countries, this could be because these countries are large brewers\
 * Many  countries  don't manufacture beer but are high beer drinking countries, such as Namibia, Belize and Gabon may drink lots of beer because it is relatively cheaper than other forms of alcohol\
 * Namibia was also a German colony until WW1 so the beer drinking culture may be a legacy of the German empire
+
+
+##Top 25 wine consuming countries
+
+```{r wine_plot}
+
+drinks %>% 
+  slice_max(n=25,wine_servings) %>% 
+  ggplot(mapping = aes(y = reorder(country,wine_servings), x = wine_servings)) +
+  geom_col()+
+  theme_economist()+
+  labs(
+    x = "Servings of wine",
+    y= "" ,
+    title = "Top 25 wine consuming countries",
+    caption = "Source: https://fivethirtyeight.com/features/dear-mona-followup-where-do-people-drink-the-most-beer-wine-and-spirits/"
+    ) + 
+    geom_text(aes(label = wine_servings), vjust=0.5, hjust=1, colour = "white", position = position_dodge(.9), size = 3)
+
+```
+
+**Wine commentary:**
+
+* Similar to beer, many of the largest wine drinkers also have many vineyards and produce wine, for example, France, Italy and Portugal are all large wine makers\
+* Exculding a few coutries like equatorial Guinea, the countries that drink wine tend to be well developed and have higher incomes this could because of wine being a more expensive good\
+
+##Top 25 spirit consuming countries
+```{r spirit_plot}
+
+drinks %>% 
+  slice_max(n=25,spirit_servings) %>% 
+  ggplot(mapping = aes(y = reorder(country,spirit_servings), x = spirit_servings)) +
+  geom_col()+
+  theme_economist()+
+  labs(
+    x = "Servings of spirit",
+    y= "" ,
+    title = "Top 25 spirit consuming countries",
+    caption = "Source: https://fivethirtyeight.com/features/dear-mona-followup-where-do-people-drink-the-most-beer-wine-and-spirits/"
+    ) + 
+    geom_text(aes(label = spirit_servings), vjust=0.5, hjust=1, colour = "white", position = position_dodge(.9), size = 3)
+
+```
+
+**Spirit commentary**
+
+* Once again, it seems that the countries that produce the most spirits tend to be the countries that drink the most, Russia famously produces vodka as do the other Eastern European states, countries such as Grenada and Haiti may produce Rum\
+* Spirits are also a cheaper form of Alcohol may be why many of the countries on the list are lower income, such as Slovakia and other Eastern European countries, as well as the Caribbean.\
+
 
