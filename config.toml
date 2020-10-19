@@ -82,7 +82,7 @@ disqusShortname = ""
     # To change the background image on the homepage banner, replace 'banner.jpg' in
     # the 'static/img' folder.
     title = "Hi, my name is Jiaying"
-    subtitle = "This is my portfolio website.\n Nice to meet you and hope you find something fun here."
+    subtitle = "This is my portfolio website. Nice to meet you and hope you find something fun here."
     buttonText = "Get Started"
 
 
@@ -117,13 +117,13 @@ disqusShortname = ""
 
     [[params.tiles.showcase]]
       title = "Alcohol Analysis"
-      subtitle = "Where Do People Drink The Most Beer, Wine And Spirits"
+      subtitle = "Where Do People Drink The Most Beer, Wine And Spirits?"
       image = "alcohol.jpg"
       url = "projects/project1"
 
     [[params.tiles.showcase]]
-      title = "continue"
-      subtitle = "Feugiat Amet Tempus"
+      title = "Yield Curve inversion"
+      subtitle = "Advanced data mining with the tidyquant package"
       image = "yield.jpg"
       url = "projects/project2"
     # You can make more showcases by copy and pasting the code above
@@ -138,7 +138,7 @@ disqusShortname = ""
   # Section Type Two
   [params.two]
     enable = true
-    title = "Know more about me"
+    title = "Know More About Me"
     subtitle = """My travel, my leisure time, and Oriental Gourmet. """
     buttonText = "Explore More"
     url = "blogs"
