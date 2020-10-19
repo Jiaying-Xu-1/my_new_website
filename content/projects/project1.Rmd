@@ -1,0 +1,85 @@
+---
+title: "Where Do People Drink The Most Beer, Wine And Spirits?"
+date: '2020-10-20'
+description: ''
+draft: no
+image: alcohol02.jpg
+keywords: ''
+slug: "project1"
+categories:
+- ''
+- ''
+---
+
+```{r, setup, echo=FALSE}
+knitr::opts_chunk$set(
+  message = FALSE, 
+  warning = FALSE, 
+  tidy=FALSE,     # display code as typed
+  size="small")   # slightly smaller font for code
+options(digits = 3)
+
+# default figure size
+knitr::opts_chunk$set(
+  fig.width=6.75, 
+  fig.height=6.75,
+  fig.align = "center"
+)
+```
+
+
+```{r load-libraries, warning=FALSE, message=FALSE, echo=FALSE}
+library(tidyverse)  # Load ggplot2, dplyr, and all the other tidyverse packages
+library(mosaic)
+library(ggthemes)
+library(lubridate)
+library(fivethirtyeight)
+library(here)
+library(skimr)
+library(janitor)
+library(vroom)
+library(tidyquant)
+library(rvest)    # scrape websites
+library(purrr)  
+library(lubridate) #to handle dates
+```
+
+
+
+# Where Do People Drink The Most Beer, Wine And Spirits?
+
+
+```{r, load_alcohol_data}
+library(fivethirtyeight)
+data(drinks)
+```
+
+
+What are the variable types? Any missing values we should worry about? 
+After cheking the data, we find that there are no missing values and data types include numeric and character data types.
+
+```{r glimpse_skim_data}
+glimpse(drinks)
+skim(drinks)
+
+```
+
+
+##Top 25 beer consuming countries
+
+```{r beer_plot}
+beer_25 <- drinks %>% 
+  arrange(desc(beer_servings)) %>% 
+  slice(1:25)
+
+ggplot(beer_25, aes( x=beer_servings, y=reorder(country, beer_servings))) + geom_point() + labs(y="", x="Beer Servings") + ggtitle("Top 25 Beer Servings") +theme_classic()
+
+
+```
+
+**Beer commentary:**
+
+* It seems that the countries that produce the most beer are the biggest drinkers. The Czech Republic, Germany and Belgium are all in the top 25 beer drinking countries, this could be because these countries are large brewers\
+* Many  countries  don't manufacture beer but are high beer drinking countries, such as Namibia, Belize and Gabon may drink lots of beer because it is relatively cheaper than other forms of alcohol\
+* Namibia was also a German colony until WW1 so the beer drinking culture may be a legacy of the German empire
+

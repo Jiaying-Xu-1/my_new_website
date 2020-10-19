@@ -3,7 +3,7 @@ categories:
 - ""
 - ""
 date: "2020-10-19"
-description: Beautiful Journey to Lake Baikal
+description: My soul companion, Out in the world somewhere, My soul companion, I'll meet you there
 draft: false
 image: Baikal.jpg
 keywords: ""

@@ -53,7 +53,7 @@ disqusShortname = ""
 
     [[params.navigation.links]]
       name = "Projects"
-      url = "blogs/ipsum"
+      url = "projects"
 
     #[[params.navigation.links]]
     #  name = "Elements"
@@ -116,16 +116,16 @@ disqusShortname = ""
       url = "blogs/blog4"
 
     [[params.tiles.showcase]]
-      title = "Consequat"
-      subtitle = "Ipsum Dolor Sit Amet"
-      image = "pic05.jpg"
-      url = "blogs/ipsum"
+      title = "Alcohol Analysis"
+      subtitle = "Where Do People Drink The Most Beer, Wine And Spirits"
+      image = "alcohol.jpg"
+      url = "projects/project1"
 
     [[params.tiles.showcase]]
       title = "Etiam"
       subtitle = "Feugiat Amet Tempus"
       image = "pic06.jpg"
-      url = "blogs/ipsum"
+      url = "projects/project2"
     # You can make more showcases by copy and pasting the code above
 
   [params.blog]
