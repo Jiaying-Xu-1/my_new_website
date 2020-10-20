@@ -173,7 +173,7 @@ data(drinks)</code></pre>
   slice_max(n=25,beer_servings) %&gt;% 
   ggplot(mapping = aes(y = reorder(country,beer_servings), x = beer_servings)) +
   geom_col()+
-  theme()+
+  theme_gdocs()+
   labs(
     x = &quot;Servings of beer&quot;,
     y= &quot;&quot; ,

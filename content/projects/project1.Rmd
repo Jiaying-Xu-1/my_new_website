@@ -70,7 +70,7 @@ drinks %>%
   slice_max(n=25,beer_servings) %>% 
   ggplot(mapping = aes(y = reorder(country,beer_servings), x = beer_servings)) +
   geom_col()+
-  theme()+
+  theme_bw()+
   labs(
     x = "Servings of beer",
     y= "" ,
@@ -98,7 +98,7 @@ drinks %>%
   slice_max(n=25,wine_servings) %>% 
   ggplot(mapping = aes(y = reorder(country,wine_servings), x = wine_servings)) +
   geom_col()+
-  theme()+
+  theme_bw()+
   labs(
     x = "Servings of wine",
     y= "" ,
@@ -121,7 +121,7 @@ drinks %>%
   slice_max(n=25,spirit_servings) %>% 
   ggplot(mapping = aes(y = reorder(country,spirit_servings), x = spirit_servings)) +
   geom_col()+
-  theme()+
+  theme_bw()+
   labs(
     x = "Servings of spirit",
     y= "" ,
