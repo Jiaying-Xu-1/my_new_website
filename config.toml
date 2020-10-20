@@ -139,18 +139,9 @@ disqusShortname = ""
   [params.two]
     enable = true
     title = "Know More About Me"
-    subtitle = """My travel, my leisure time, and Oriental Gourmet."""
+    subtitle = """My travel, my leisure time and oriental gourmet."""
     buttonText = "Explore More"
     url = "blogs"
-
-  # Section Type Two
-  [params.two]
-    enable = true
-    title = "Explore My Projects"
-    subtitle = """Advanced data mining and analysis with R."""
-    buttonText = "Explore More"
-    url = "projects"
-
 
   # Contact section
   [params.contact]
