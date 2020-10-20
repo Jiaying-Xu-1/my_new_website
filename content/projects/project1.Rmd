@@ -76,7 +76,7 @@ drinks %>%
     y= "" ,
     title = "Top 25 beer consuming countries",
     caption = "Source: https://fivethirtyeight.com/features/dear-mona-followup-where-do-people-drink-the-most-beer-wine-and-spirits/"
-    ) + 
+    )+ 
     geom_text(aes(label = beer_servings), vjust=0.5, hjust=1, colour = "white", position = position_dodge(.9), size = 3)
 
 
@@ -104,7 +104,7 @@ drinks %>%
     y= "" ,
     title = "Top 25 wine consuming countries",
     caption = "Source: https://fivethirtyeight.com/features/dear-mona-followup-where-do-people-drink-the-most-beer-wine-and-spirits/"
-    ) + 
+    )+ 
     geom_text(aes(label = wine_servings), vjust=0.5, hjust=1, colour = "white", position = position_dodge(.9), size = 3)
 
 ```
@@ -127,7 +127,7 @@ drinks %>%
     y= "" ,
     title = "Top 25 spirit consuming countries",
     caption = "Source: https://fivethirtyeight.com/features/dear-mona-followup-where-do-people-drink-the-most-beer-wine-and-spirits/"
-    ) + 
+    )+ 
     geom_text(aes(label = spirit_servings), vjust=0.5, hjust=1, colour = "white", position = position_dodge(.9), size = 3)
 
 ```
