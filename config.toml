@@ -38,7 +38,7 @@ disqusShortname = ""
   # Navigation Section
   [params.navigation]
     title = "Jiaying"
-    subtitle = "portfolio"
+    subtitle = "Portfolio"
     menu = "Menu"
     # Optional logo as brand stored in img/
     # logo = "logo.png"
@@ -98,7 +98,7 @@ disqusShortname = ""
       url = "blogs/blog1"
 
     [[params.tiles.showcase]]
-      title = "My fascinating Traveling"
+      title = "My Fascinating Traveling"
       subtitle = "Follow me and explore the fascinating scenery"
       image = "traveling.jpg"
       url = "blogs/blog2"
@@ -117,12 +117,12 @@ disqusShortname = ""
 
     [[params.tiles.showcase]]
       title = "Alcohol Analysis"
-      subtitle = "Where Do People Drink The Most Beer, Wine And Spirits?"
+      subtitle = "Advanced data analysis with the tidyverse package"
       image = "alcohol.jpg"
       url = "projects/project1"
 
     [[params.tiles.showcase]]
-      title = "Yield Curve inversion"
+      title = "Yield Curve Inversion"
       subtitle = "Advanced data mining with the tidyquant package"
       image = "yield.jpg"
       url = "projects/project2"
