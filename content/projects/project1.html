@@ -173,13 +173,13 @@ data(drinks)</code></pre>
   slice_max(n=25,beer_servings) %&gt;% 
   ggplot(mapping = aes(y = reorder(country,beer_servings), x = beer_servings)) +
   geom_col()+
-  theme_gdocs()+
+  theme_bw()+
   labs(
     x = &quot;Servings of beer&quot;,
     y= &quot;&quot; ,
     title = &quot;Top 25 beer consuming countries&quot;,
     caption = &quot;Source: https://fivethirtyeight.com/features/dear-mona-followup-where-do-people-drink-the-most-beer-wine-and-spirits/&quot;
-    ) + 
+    )+ 
     geom_text(aes(label = beer_servings), vjust=0.5, hjust=1, colour = &quot;white&quot;, position = position_dodge(.9), size = 3)</code></pre>
 <p><img src="/projects/project1_files/figure-html/beer_plot-1.png" width="648" style="display: block; margin: auto;" /></p>
 <p><strong>Beer commentary:</strong></p>
@@ -195,13 +195,13 @@ data(drinks)</code></pre>
   slice_max(n=25,wine_servings) %&gt;% 
   ggplot(mapping = aes(y = reorder(country,wine_servings), x = wine_servings)) +
   geom_col()+
-  theme()+
+  theme_bw()+
   labs(
     x = &quot;Servings of wine&quot;,
     y= &quot;&quot; ,
     title = &quot;Top 25 wine consuming countries&quot;,
     caption = &quot;Source: https://fivethirtyeight.com/features/dear-mona-followup-where-do-people-drink-the-most-beer-wine-and-spirits/&quot;
-    ) + 
+    )+ 
     geom_text(aes(label = wine_servings), vjust=0.5, hjust=1, colour = &quot;white&quot;, position = position_dodge(.9), size = 3)</code></pre>
 <p><img src="/projects/project1_files/figure-html/wine_plot-1.png" width="648" style="display: block; margin: auto;" /></p>
 <p><strong>Wine commentary:</strong></p>
@@ -216,13 +216,13 @@ data(drinks)</code></pre>
   slice_max(n=25,spirit_servings) %&gt;% 
   ggplot(mapping = aes(y = reorder(country,spirit_servings), x = spirit_servings)) +
   geom_col()+
-  theme()+
+  theme_bw()+
   labs(
     x = &quot;Servings of spirit&quot;,
     y= &quot;&quot; ,
     title = &quot;Top 25 spirit consuming countries&quot;,
     caption = &quot;Source: https://fivethirtyeight.com/features/dear-mona-followup-where-do-people-drink-the-most-beer-wine-and-spirits/&quot;
-    ) + 
+    )+ 
     geom_text(aes(label = spirit_servings), vjust=0.5, hjust=1, colour = &quot;white&quot;, position = position_dodge(.9), size = 3)</code></pre>
 <p><img src="/projects/project1_files/figure-html/spirit_plot-1.png" width="648" style="display: block; margin: auto;" /></p>
 <p><strong>Spirit commentary</strong></p>
