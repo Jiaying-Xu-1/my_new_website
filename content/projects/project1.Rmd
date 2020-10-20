@@ -62,7 +62,7 @@ skim(drinks)
 ```
 
 
-##Top 25 beer consuming countries
+## Top 25 beer consuming countries
 
 ```{r beer_plot}
 
@@ -90,7 +90,7 @@ drinks %>%
 * Namibia was also a German colony until WW1 so the beer drinking culture may be a legacy of the German empire
 
 
-##Top 25 wine consuming countries
+## Top 25 wine consuming countries
 
 ```{r wine_plot}
 
@@ -114,7 +114,7 @@ drinks %>%
 * Similar to beer, many of the largest wine drinkers also have many vineyards and produce wine, for example, France, Italy and Portugal are all large wine makers\
 * Exculding a few coutries like equatorial Guinea, the countries that drink wine tend to be well developed and have higher incomes this could because of wine being a more expensive good\
 
-##Top 25 spirit consuming countries
+## Top 25 spirit consuming countries
 ```{r spirit_plot}
 
 drinks %>% 

@@ -168,7 +168,8 @@ data(drinks)</code></pre>
 </tr>
 </tbody>
 </table>
-<p>##Top 25 beer consuming countries</p>
+<div id="top-25-beer-consuming-countries" class="section level2">
+<h2>Top 25 beer consuming countries</h2>
 <pre class="r"><code>drinks %&gt;% 
   slice_max(n=25,beer_servings) %&gt;% 
   ggplot(mapping = aes(y = reorder(country,beer_servings), x = beer_servings)) +
@@ -190,7 +191,9 @@ data(drinks)</code></pre>
 </li>
 <li>Namibia was also a German colony until WW1 so the beer drinking culture may be a legacy of the German empire</li>
 </ul>
-<p>##Top 25 wine consuming countries</p>
+</div>
+<div id="top-25-wine-consuming-countries" class="section level2">
+<h2>Top 25 wine consuming countries</h2>
 <pre class="r"><code>drinks %&gt;% 
   slice_max(n=25,wine_servings) %&gt;% 
   ggplot(mapping = aes(y = reorder(country,wine_servings), x = wine_servings)) +
@@ -211,7 +214,9 @@ data(drinks)</code></pre>
 <li>Exculding a few coutries like equatorial Guinea, the countries that drink wine tend to be well developed and have higher incomes this could because of wine being a more expensive good<br />
 </li>
 </ul>
-<p>##Top 25 spirit consuming countries</p>
+</div>
+<div id="top-25-spirit-consuming-countries" class="section level2">
+<h2>Top 25 spirit consuming countries</h2>
 <pre class="r"><code>drinks %&gt;% 
   slice_max(n=25,spirit_servings) %&gt;% 
   ggplot(mapping = aes(y = reorder(country,spirit_servings), x = spirit_servings)) +
@@ -232,4 +237,5 @@ data(drinks)</code></pre>
 <li>Spirits are also a cheaper form of Alcohol may be why many of the countries on the list are lower income, such as Slovakia and other Eastern European countries, as well as the Caribbean.<br />
 </li>
 </ul>
+</div>
 </div>

@@ -124,7 +124,6 @@ yield_curve <-left_join(df,mylookup,by="symbol")
 ### Yields on US rates by duration since 1960
 
 ```{r yield_curve_1, echo=FALSE, out.width="100%"}
-knitr::include_graphics(here::here("images", "yield_curve1.png"), error = FALSE)
 
 yield_curve_1 <- df 
 #change the order of the aspect: group <- factor(group,levels = c("1","2"))
@@ -169,7 +168,6 @@ yield_curve_1
 
 
 ```{r yield_curve_2, echo=FALSE, out.width="100%"}
-knitr::include_graphics(here::here("images", "yield_curve2.png"), error = FALSE)
 
 yield_curve_2 <- yield_curve 
 
@@ -214,7 +212,6 @@ yield_curve_2
 ### 3-month and 10-year yields since 1999
 
 ```{r yield_curve_3, echo=FALSE, out.width="100%"}
-knitr::include_graphics(here::here("images", "yield_curve3.png"), error = FALSE)
 
 yield_curve_3 <- yield_curve_2 %>% 
 filter(symbol %in% c('GS10','TB3MS'))
