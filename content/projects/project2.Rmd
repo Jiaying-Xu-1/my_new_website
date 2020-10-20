@@ -254,17 +254,17 @@ yield_curve_3
 
 #### Some questions and analysis
 
-Does the yield curve seem to flatten before these recessions? 
-- Not exactly, because the yield curve moves in tandem with recessions, and it is impossible to judge the sequence of them.
+Does the yield curve seem to flatten before these recessions?  
+- Not exactly, because the yield curve moves in tandem with recessions, and it is impossible to judge the sequence of them.  
 
 
-Can a yield curve flattening really mean a recession is coming in the US? 
-- According to the expectation theory of the term structure, the shape of the term structure includes the market's expectation of the future real interest rate and inflation level. Under the assumption of rational expectations, the government bond yield curve can be used to predict the future macroeconomic operation. 
-- In most cases, the economy is about to enter a recession and depression when the Treasury yield curve shows that short-term interest rates are higher than long-term rates. On the contrary, when the Treasury yield curve shows the spread between long-term interest rate and short-term interest rate, it indicates that the economy is going to the stage of prosperity and recovery. However, it is hard to definitely say a yield curve flattening really mean a recession is coming in the US.
+Can a yield curve flattening really mean a recession is coming in the US?  
+- According to the expectation theory of the term structure, the shape of the term structure includes the market's expectation of the future real interest rate and inflation level. Under the assumption of rational expectations, the government bond yield curve can be used to predict the future macroeconomic operation.   
+- In most cases, the economy is about to enter a recession and depression when the Treasury yield curve shows that short-term interest rates are higher than long-term rates. On the contrary, when the Treasury yield curve shows the spread between long-term interest rate and short-term interest rate, it indicates that the economy is going to the stage of prosperity and recovery. However, it is hard to definitely say a yield curve flattening really mean a recession is coming in the US.  
 
 
-Since 1999, when did short-term (3 months) yield more than longer term (10 years) debt?
-- Around 2001-2002, 2006-2007 and mid2018-2019.
+Since 1999, when did short-term (3 months) yield more than longer term (10 years) debt?  
+- Around 2001-2002, 2006-2007 and mid2018-2019.  
 
 
 
