@@ -92,7 +92,7 @@ disqusShortname = ""
     # Display your showcases here.
     
     [[params.tiles.showcase]]
-      title = "About me"
+      title = "About Me"
       subtitle = "Jiaying: Self Introduction"
       image = "jiaying.jpg"
       url = "blogs/blog1"
@@ -139,9 +139,17 @@ disqusShortname = ""
   [params.two]
     enable = true
     title = "Know More About Me"
-    subtitle = """My travel, my leisure time, and Oriental Gourmet. """
+    subtitle = """My travel, my leisure time, and Oriental Gourmet."""
     buttonText = "Explore More"
     url = "blogs"
+
+  # Section Type Two
+  [params.two]
+    enable = true
+    title = "Explore My Projects"
+    subtitle = """Advanced data mining and analysis with R."""
+    buttonText = "Explore More"
+    url = "projects"
 
 
   # Contact section
