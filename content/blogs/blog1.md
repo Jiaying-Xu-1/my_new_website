@@ -12,9 +12,13 @@ title: About Me
 ---
 
 
-Hello everyone! Nice to meet you here! I am Jiaying Xu. 
+Hello everyone! Nice to meet you here! 
 
-I graduated from Peking University, China. Currently, I am a MFA student at London Business School. 
+I am Jiaying Xu from China. 
+
+I graduated from Peking University, majoring in Finance. 
+
+Currently, I am a MFA student at London Business School. 
 
 This is my personal portfolio website and I will share my life stories and upload recent projects here! 
 

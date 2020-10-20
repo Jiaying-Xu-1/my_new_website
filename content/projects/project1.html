@@ -1,7 +1,7 @@
 ---
 title: "Alcohol Analysis"
 date: '2020-10-20'
-description: ''
+description: 'Advanced data analysis with the tidyverse package'
 draft: no
 image: alcohol02.jpg
 keywords: ''
@@ -173,7 +173,7 @@ data(drinks)</code></pre>
   slice_max(n=25,beer_servings) %&gt;% 
   ggplot(mapping = aes(y = reorder(country,beer_servings), x = beer_servings)) +
   geom_col()+
-  theme_economist()+
+  theme()+
   labs(
     x = &quot;Servings of beer&quot;,
     y= &quot;&quot; ,
@@ -195,7 +195,7 @@ data(drinks)</code></pre>
   slice_max(n=25,wine_servings) %&gt;% 
   ggplot(mapping = aes(y = reorder(country,wine_servings), x = wine_servings)) +
   geom_col()+
-  theme_economist()+
+  theme()+
   labs(
     x = &quot;Servings of wine&quot;,
     y= &quot;&quot; ,
@@ -216,7 +216,7 @@ data(drinks)</code></pre>
   slice_max(n=25,spirit_servings) %&gt;% 
   ggplot(mapping = aes(y = reorder(country,spirit_servings), x = spirit_servings)) +
   geom_col()+
-  theme_economist()+
+  theme()+
   labs(
     x = &quot;Servings of spirit&quot;,
     y= &quot;&quot; ,

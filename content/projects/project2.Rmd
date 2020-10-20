@@ -1,5 +1,5 @@
 ---
-title: "Yield Curve inversion"
+title: "Yield Curve Inversion"
 date: '2020-10-20'
 description: 'Advanced data mining with the tidyquant package'
 draft: no
@@ -54,10 +54,10 @@ At the top of this page,different typies of yield curves is showed and the stran
 Every so often, we hear warnings from commentators on the "inverted yield curve" and its predictive power with respect to recessions. An explainer what a [inverted yield curve is can be found here](https://www.reuters.com/article/us-usa-economy-yieldcurve-explainer/explainer-what-is-an-inverted-yield-curve-idUSKBN1O50GA). If you'd rather listen to something, here is a great podcast from [NPR on yield curve indicators](https://www.podbean.com/media/share/dir-4zgj9-6aefd11)
 
 
-In this project we will look at US data and use the [FRED database](https://fred.stlouisfed.org/) to download historical yield curve rates, and plot the yield curves since 1999 to see when the yield curves flatten. If you want to know more, a very nice article that explains the [yield curve is and its inversion can be found here](https://fredblog.stlouisfed.org/2018/10/the-data-behind-the-fear-of-yield-curve-inversions/). At the end of this chllenge you should produce this chart
+In this project we will look at US data and use the [FRED database](https://fred.stlouisfed.org/) to download historical yield curve rates, and plot the yield curves since 1999 to see when the yield curves flatten. If you want to know more, a very nice article that explains the [yield curve is and its inversion can be found here](https://fredblog.stlouisfed.org/2018/10/the-data-behind-the-fear-of-yield-curve-inversions/). **At the end of this chllenge I will produce an interesting chart to better explain this topic.**
 
 
-First, we will use the `tidyquant` package to download monthly rates for different durations. 
+First, using the `tidyquant` package to download monthly rates for different durations. 
 
 ```{r get_rates, warning=FALSE}
 # Get a list of FRED codes for US rates and US yield curve; choose monthly frequency
@@ -252,29 +252,26 @@ yield_curve_3
 ```
 
 
-According to [Wikipedia's list of recession in the United States](https://en.wikipedia.org/wiki/List_of_recessions_in_the_United_States), since 1999 there have been two recession in the US: between Mar 2001–Nov 2001 and between Dec 2007–June 2009. 
-
+#### Some questions and analysis
 
 Does the yield curve seem to flatten before these recessions? 
-
 - Not exactly, because the yield curve moves in tandem with recessions, and it is impossible to judge the sequence of them.
 
-Can a yield curve flattening really mean a recession is coming in the US? 
 
-- According to the expectation theory of the term structure, the shape of the term structure includes the market's expectation of the future real interest rate and inflation level. Under the assumption of rational expectations, the government bond yield curve can be used to predict the future macroeconomic operation. In most cases, the economy is about to enter a recession and depression when the Treasury yield curve shows that short-term interest rates are higher than long-term rates. On the contrary, when the Treasury yield curve shows the spread between long-term interest rate and short-term interest rate, it indicates that the economy is going to the stage of prosperity and recovery. However, it is hard to definitely say a yield curve flattening really mean a recession is coming in the US.
+Can a yield curve flattening really mean a recession is coming in the US? 
+- According to the expectation theory of the term structure, the shape of the term structure includes the market's expectation of the future real interest rate and inflation level. Under the assumption of rational expectations, the government bond yield curve can be used to predict the future macroeconomic operation. 
+- In most cases, the economy is about to enter a recession and depression when the Treasury yield curve shows that short-term interest rates are higher than long-term rates. On the contrary, when the Treasury yield curve shows the spread between long-term interest rate and short-term interest rate, it indicates that the economy is going to the stage of prosperity and recovery. However, it is hard to definitely say a yield curve flattening really mean a recession is coming in the US.
+
 
 Since 1999, when did short-term (3 months) yield more than longer term (10 years) debt?
-
 - Around 2001-2002, 2006-2007 and mid2018-2019.
 
 
 
-Produce our final fabulous plot:
+## Produce the final fabulous plot
 
 
 ```{r setup_US-recessions, warning=FALSE}
-#target
-knitr::include_graphics(here::here("images", "yield_curve_challenge.png"), error = FALSE)
 
 # get US recession dates after 1946 from Wikipedia 
 # https://en.wikipedia.org/wiki/List_of_recessions_in_the_United_States
@@ -334,7 +331,6 @@ geom_rect(xmin=as.numeric(as.Date(c("1973-11-01"))),xmax=as.numeric(as.Date(c("1
        x= "", y = "Difference (10 year - 3 month) yield in %")
   
 Inversion
-
 
 
 

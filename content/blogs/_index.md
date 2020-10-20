@@ -6,4 +6,4 @@ slug: blogs
 title: My Lifestyle
 ---
 
-My lifestyle: my travel, my leisure time, and Oriental Gourmet.
+My lifestyle: my journey, my leisure time and oriental gourmet.

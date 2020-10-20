@@ -11,4 +11,4 @@ slug: blog3
 title: Oriental Gourmet
 ---
 
-I love Oriental Food! Chinese dishes, Japanese cuisine, and Thai cuisine are my favorites!
+I love Oriental Food! Chinese dishes, Japanese cuisine, and Thai food are my favorites!

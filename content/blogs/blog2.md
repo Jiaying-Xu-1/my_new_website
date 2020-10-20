@@ -10,9 +10,16 @@ keywords: ""
 slug: blog2
 title: Beautiful Journey to Lake Baikal
 ---
+# My Journey
 
-**Last year I went to Russia and spent a fabulous time by Lake Baikal. I followed in the footsteps of poet Kenton M. Stewart and his poem:**
+**Last year I went to Russia and spent a fabulous time by Lake Baikal.**
 
+**I followed in the footsteps of poet Kenton M. Stewart and his poem: _Lake Baikal_.**
+
+***
+
+# Lake Baikal
+### Kenton M. Stewart
 
 I tried to get a sense of the wonder of Baikal,
 but its majesty was just too great for words to fit it all.
@@ -38,3 +45,6 @@ So how can we preserve Baikal and show we really care?
 That’s a question that will haunt you… once you have been there.
 Seasons come and seasons go in ancient Lake Baikal.
 I’m in wonder of that treasure. I’m in love with Lake Baikal.
+
+***
+
