@@ -98,7 +98,7 @@ disqusShortname = ""
       url = "blogs/blog1"
 
     [[params.tiles.showcase]]
-      title = "My Great Traveling"
+      title = "My fascinating Traveling"
       subtitle = "Follow me and explore the fascinating scenery"
       image = "traveling.jpg"
       url = "blogs/blog2"
@@ -188,7 +188,7 @@ disqusShortname = ""
     # Uses font awesome icons
     [[params.footer.social]]
       icon = "fa-twitter"
-      url= "https://www.twitter.com"
+      url= "https://twitter.com/JiayingXu11"
       label = "Twitter"
 
     [[params.footer.social]]
@@ -198,17 +198,17 @@ disqusShortname = ""
 
     [[params.footer.social]]
       icon = "fa-instagram"
-      url= "https://www.instagram.com"
+      url= "https://www.instagram.com/jane_.hsu/"
       label = "Instagram"
     
     [[params.footer.social]]
       icon = "fa-github"
-      url= "https://github.com/Jiaying-Xu-1m"
+      url= "https://github.com/Jiaying-Xu-1"
       label = "GitHub"
 
     [[params.footer.social]]
       icon = "fa-linkedin"
-      url= "https://www.linkedin.com/in/jiaying-xu-7211b9160"
+      url= "https://www.linkedin.com/in/jiaying-xu-7211b9160/"
       label = "LinkedIn"
 
     [[params.footer.quicklinks]]
