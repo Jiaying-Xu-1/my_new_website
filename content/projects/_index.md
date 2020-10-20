@@ -1,9 +1,9 @@
 ---
-date: "2020-10-19"
+date: "2020-10-20"
 draft: false
-image: pic06.jpg
+image: pjs.jpg
 slug: projects
-title: Projects
+title: My Projects
 ---
 
-My blogs about technology and lifestyle.
+My R projects for data analytics.

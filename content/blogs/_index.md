@@ -1,9 +1,9 @@
 ---
 date: "2020-10-19"
 draft: false
-image: pic02.jpg
+image: blogs.jpg
 slug: blogs
 title: My Lifestyle
 ---
 
-My blogs about technology and lifestyle.
+My lifestyle: my travel, my leisure time, and Oriental Gourmet.
